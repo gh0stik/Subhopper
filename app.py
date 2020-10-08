@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+import sys
+sys.path.insert(1, "./src")
+import subhopper_oop, whois_extractor, re
 from time import sleep
-import subhopper_oop
-import whois_extractor
-import re
 from db_functions import remove_rows, get_stats
 from flask import Flask, redirect, request, render_template, flash
 from os.path import join, dirname, realpath
